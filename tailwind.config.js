@@ -25,7 +25,7 @@ module.exports = {
       },
       animation: {
         scroll: 'scroll 10s linear infinite',
-        colorFade: 'colorFade 0.3s ease-in-out',
+        colorFade: 'colorFade 0.3s',
         oneBounce: 'bounce 1s'
       },
       colors: {
