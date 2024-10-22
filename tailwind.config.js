@@ -49,8 +49,8 @@ module.exports = {
         scroll: 'scroll 10s linear infinite',
         colorFade: 'colorFade 0.3s',
         oneBounce: 'bounce 1s',
-        typewriter: 'typewriter 2s steps(11) forwards',
-        caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
+        typewriter: 'typewriter 1s steps(11) forwards',
+        caret: 'typewriter 1s steps(11) forwards, blink 1s steps(9) infinite 1s',
       },
       colors: {
         'default-bg': '#2E3440',

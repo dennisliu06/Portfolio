@@ -556,6 +556,10 @@ video {
   display: none;
 }
 
+.relative{
+  position: relative;
+}
+
 .sticky{
   position: sticky;
 }
@@ -587,6 +591,11 @@ video {
 
 .min-h-screen{
   min-height: 100vh;
+}
+
+.w-\[max-content\]{
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .w-full{
@@ -742,6 +751,94 @@ video {
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.before\:absolute::before{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:inset-0::before{
+  content: var(--tw-content);
+  inset: 0px;
+}
+
+@keyframes typewriter{
+  to{
+    content: var(--tw-content);
+    left: 100%;
+  }
+}
+
+.before\:animate-typewriter::before{
+  content: var(--tw-content);
+  animation: typewriter 1s steps(11) forwards;
+}
+
+.before\:bg-default-bg::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 52 64 / var(--tw-bg-opacity));
+}
+
+.after\:absolute::after{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:inset-0::after{
+  content: var(--tw-content);
+  inset: 0px;
+}
+
+.after\:w-\[0\.025em\]::after{
+  content: var(--tw-content);
+  width: 0.025em;
+}
+
+@keyframes typewriter{
+  to{
+    content: var(--tw-content);
+    left: 100%;
+  }
+}
+
+@keyframes blink{
+  0%{
+    content: var(--tw-content);
+    opacity: 0;
+  }
+
+  0.1%{
+    content: var(--tw-content);
+    opacity: 1;
+  }
+
+  50%{
+    content: var(--tw-content);
+    opacity: 1;
+  }
+
+  50.1%{
+    content: var(--tw-content);
+    opacity: 0;
+  }
+
+  100%{
+    content: var(--tw-content);
+    opacity: 0;
+  }
+}
+
+.after\:animate-caret::after{
+  content: var(--tw-content);
+  animation: typewriter 1s steps(11) forwards, blink 1s steps(9) infinite 1s;
+}
+
+.after\:bg-default-text::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 232 217 / var(--tw-bg-opacity));
 }
 
 @keyframes colorFade{
