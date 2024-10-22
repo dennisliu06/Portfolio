@@ -57,7 +57,8 @@ module.exports = {
         'default-text': '#ECE8D9',
         'accent': '#A3B18A',
         'second-accent': '#D68A62',
-        'highlight': '#FFDFC9'
+        'highlight': '#FFDFC9',
+        'shadow-text': '#B0A898'
       },
       fontFamily: {
         title: ['Outfit']

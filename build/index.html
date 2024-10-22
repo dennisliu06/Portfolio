@@ -56,37 +56,53 @@
     <div
       class="pb-12 px-8 border-b-[1px] border-b-accent mb-96 flex flex-col gap-40 overflow-hidden justify-center items-center"
     >
+      <div></div>
       <div class="flex flex-row gap-72 h-[50vh]">
         <div class="h-40 w-96">
           <img
+            id="headshot"
+            alt="headshot picture"
             src="./assets/images/headshot.jpeg"
             class="object-contain h-auto rounded-full"
           />
         </div>
         <div id="name-and-description" class="flex flex-col gap-4">
-          <p class="font-mono text-base text-accent">Hi, I'm</p>
+          <p class="font-mono text-accent">Hi, I'm</p>
           <h1
             class="font-title text-4xl md:text-6xl xl:text-8xl font-mediumw relative w-[max-content] before:absolute before:inset-0 before:animate-typewriter before:bg-default-bg after:absolute after:inset-0 after:w-[0.025em] after:animate-caret after:bg-default-text"
           >
             Dennis Liu.
           </h1>
+          <div class="text-shadow-text text-2xl">
+            <p
+              class="font-title md:text-2xl xl:text-3xl relative w-[max-content]"
+            >
+              I design and build software that solves real-world problems.
+            </p>
+          </div>
           <div class="flex flex-row gap-4 mt-4">
             <div class="hover:animate-oneBounce p-2">
-              <button
-                class="text-2xl font-mono text-accent border-2 border-accent w-40 h-14 rounded-2xl hover:bg-accent hover:bg-opacity-25"
+              <a
+                href="./#projects"
+                class="text-2xl font-mono text-accent border-2 border-accent w-40 h-14 rounded-2xl hover:bg-accent hover:bg-opacity-25 flex justify-center items-center"
               >
                 Projects
-              </button>
+              </a>
             </div>
             <div class="hover:animate-oneBounce p-2">
-              <button
-                class="text-2xl font-mono text-accent border-2 border-accent w-40 h-14 rounded-2xl hover:bg-accent hover:bg-opacity-25"
+              <a
+                href="./#contact"
+                class="text-2xl font-mono text-accent border-2 border-accent w-40 h-14 rounded-2xl hover:bg-accent hover:bg-opacity-25 flex justify-center items-center"
               >
-                Resume
-              </button>
+                Contact
+              </a>
             </div>
           </div>
         </div>
+      </div>
+      <div></div>
+      <div>
+        hello
       </div>
     </div>
   </body>

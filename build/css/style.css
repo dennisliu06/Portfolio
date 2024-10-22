@@ -581,10 +581,6 @@ video {
   margin-bottom: 24rem;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
@@ -632,22 +628,6 @@ video {
 
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@keyframes oneBounce{
-  0%, 100%{
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-
-  50%{
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-}
-
-.animate-oneBounce{
-  animation: oneBounce 0.3s;
 }
 
 .flex-row{
@@ -786,11 +766,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .font-extralight{
   font-weight: 200;
 }
@@ -812,6 +787,11 @@ video {
 .text-second-accent{
   --tw-text-opacity: 1;
   color: rgb(214 138 98 / var(--tw-text-opacity));
+}
+
+.text-shadow-text{
+  --tw-text-opacity: 1;
+  color: rgb(176 168 152 / var(--tw-text-opacity));
 }
 
 .opacity-100{
@@ -970,9 +950,19 @@ video {
     padding-right: 1.5rem;
   }
 
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -984,9 +974,29 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .xl\:text-8xl{
     font-size: 6rem;
     line-height: 1;
+  }
+
+  .xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
