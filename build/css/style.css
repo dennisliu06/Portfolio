@@ -630,6 +630,20 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.animate-fade{
+  animation: fadeIn 1s ease-in-out;
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -831,7 +845,7 @@ video {
 
 .before\:animate-typewriter::before{
   content: var(--tw-content);
-  animation: typewriter 1s steps(11) forwards;
+  animation: typewriter 1s steps(11) forwards 0.5s;
 }
 
 .before\:bg-default-bg::before{
@@ -891,7 +905,7 @@ video {
 
 .after\:animate-caret::after{
   content: var(--tw-content);
-  animation: typewriter 1s steps(11) forwards, blink 1s steps(9) infinite 1s;
+  animation: typewriter 1s steps(11) forwards 0.5s, blink 1s steps(9) infinite 1s;
 }
 
 .after\:bg-default-text::after{
@@ -945,28 +959,41 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:mb-72{
+    margin-bottom: 18rem;
+  }
+
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .md\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .md\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
+  .md\:pb-16{
+    padding-bottom: 4rem;
   }
 
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1024px){
+  .lg\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -974,29 +1001,26 @@ video {
 }
 
 @media (min-width: 1280px){
-  .xl\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
+  .xl\:px-40{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .xl\:text-8xl{
     font-size: 6rem;
     line-height: 1;
   }
+}
 
-  .xl\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .xl\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .xl\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+@media (min-width: 1536px){
+  .\32xl\:px-\[20\%\]{
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
 

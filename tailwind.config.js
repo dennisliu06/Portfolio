@@ -44,13 +44,18 @@ module.exports = {
             opacity: '0',
           },
         },
+        fadeIn: {
+					'0%': { opacity: 0 },
+					'100%': { opacity: 1 },
+				},
       },
       animation: {
         scroll: 'scroll 10s linear infinite',
         colorFade: 'colorFade 0.2s',
         oneBounce: 'oneBounce 0.3s',
-        typewriter: 'typewriter 1s steps(11) forwards',
-        caret: 'typewriter 1s steps(11) forwards, blink 1s steps(9) infinite 1s',
+        typewriter: 'typewriter 1s steps(11) forwards 0.5s',
+        caret: 'typewriter 1s steps(11) forwards 0.5s, blink 1s steps(9) infinite 1s',
+        fade: 'fadeIn 1s ease-in-out',
       },
       colors: {
         'default-bg': '#2E3440',
