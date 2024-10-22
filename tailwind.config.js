@@ -14,12 +14,12 @@ module.exports = {
         },
         oneBounce: {
           '0%, 100%': {
-            transform: 'translateY(-25%)',
-            'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)',
-          },
-          '50%': {
             transform: 'translateY(0)',
             'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)',
+          },
+          '50%': {
+            transform: 'translateY(-25%)',
+            'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)',
           }
         },
         typewriter: {
@@ -47,8 +47,8 @@ module.exports = {
       },
       animation: {
         scroll: 'scroll 10s linear infinite',
-        colorFade: 'colorFade 0.3s',
-        oneBounce: 'bounce 1s',
+        colorFade: 'colorFade 0.2s',
+        oneBounce: 'oneBounce 0.3s',
         typewriter: 'typewriter 1s steps(11) forwards',
         caret: 'typewriter 1s steps(11) forwards, blink 1s steps(9) infinite 1s',
       },
